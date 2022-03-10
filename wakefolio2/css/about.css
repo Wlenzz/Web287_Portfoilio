@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.25),transparent),url(../imagez/background.png); /* ../ to acces file in folders*/
+    background-position: center;
+    background-size: cover;
+    padding: 0 1%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.icon {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+}
+.logo {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 1%;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 25px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+/* line effect in nav links, width trans*/
+nav ul li a::after{
+content: '';
+width: 0; 
+height: 3px;
+position: absolute;
+bottom: -5px;
+left: 50%;
+transform: translateX(-50%);
+background: #fff;
+transition: width 0.2s;
+}
+nav ul li a:hover::after {
+    width: 50%;
+}
+/* Body for Other pages*/
+
+.headAbt {
+    align-items: center;
+    border-bottom: #fff dashed 2px;
+    height: 10vh;
+}
+
+.headAbt h1{
+    font-size: 75px;
+    line-height: 75px;
+    margin-left: 5px;
+    color: azure;
+    text-align: center;
+    font-family:cursive;
+}
+
+.proPic {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    float: left;
+    padding: 0.5%;
+}
+
+.introAbt p {
+    color: aliceblue;
+    padding: 0.5%;
+    margin: 2px;
+}
+

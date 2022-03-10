@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.25),transparent),url(../imagez/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0.5% 2%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.icon {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 0.5%;
+    
+}
+.logo {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 1%;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 25px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+/* line effect in nav links, width trans*/
+nav ul li a::after{
+content: '';
+width: 0; 
+height: 3px;
+position: absolute;
+bottom: -5px;
+left: 50%;
+transform: translateX(-50%);
+background: greenyellow;
+transition: width 0.2s;
+}
+nav ul li a:hover::after {
+    width: 50%;
+}
+/* Intro text effects*/
+
+.site-intro{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.site-intro p{
+    font-size: 55px;
+    font-weight: 550;
+    padding-left: 2%;
+}
+.site-intro h1{
+    font-size: 125px;
+    line-height: 125px;
+    margin-left: 5px;
+}
+.site-intro h3{
+    font-size: 45px;
+    font-weight: 450;
+    padding-left: 2%;
+    line-height: 60px;
+}
+span{
+    line-height: 45px;
+    font-size: 25px;
+    padding-top: 15px;
+    margin-left: 2.5px;
+}
+.site-intro a{
+    text-decoration: none;
+    color: green;
+}
+.site-intro .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-left: 2%;
+}
+.site-intro a{
+    color: #fff;
+    text-decoration: none; /*creates border around links- a href */
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid greenyellow;
+   
+}
+.site-intro a span {
+    font-size: 23px;
+    line-height: 10px;
+    margin-left: 5px;
+}
+
+.media-icons{
+    position: absolute;
+    right: 2%;
+    bottom: 8%;
+    padding-right: 2%;
+}
+.media-icons img{
+    width: 40px;
+    display: inline;
+    margin: 5px 10px;
+}
+
+/* media queries */
